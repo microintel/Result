@@ -893,14 +893,10 @@ else{alert("Invalid Reg Number");}
     document.getElementById('d16').innerHTML = data[h][15]+"/450";
     document.getElementById('d17').innerHTML= data[h][16];
     if (data[h][16]=="FAIL" || data[h][16]=="Fail" || data[h][16]=="withheld" || data[h][16]=="WITHHELD"){
-      a.src="air.mp3";
-      a.currentTime=0;
-      a.play();
+      let thu=1;
     }
     if (data[h][16]=="FIRST CLASS" || data[h][16]=="First Class" || data[h][16]=="DISTINTION" || data[h][16]=="Distinction"){
-    a.src="wis.mp3";
-    a.currentTime=0;
-    a.play();
+    let thu=2;
     }
     
       
