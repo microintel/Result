@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Card</title>
+    <style>
+        body {
+            font-family:Times New Roman;
+            margin: 12px;
+            border:6px solid black;
+        }
+        .header {
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1 {
+            font-size: 20px;
+        }
+        .header h2 {
+            font-size: 18px;
+        }
+        table {
+            
+            border:none;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            color:red;
+            
+        }
+        .footer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer div {
+            text-align: center;
+        }
+        
+        #content{
+        
+        padding:10px;
+        
+        
+        }
+        
+        #tdd{
+        
+        color:red;
+        border:none;
+        
+        }
+        p{
+        
+        font-weight:bold;
+        color:20px;
+        }
+        ex{
+        color:black;
+        }
+        ef{
+        color:red;
+        
+        }
+        
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+<script src="https://microassest.github.io/MicroIntelAssest/dmcscript.js"></script>
+<div id="content">
+    <div class="header">
+        <div>
+        <img src="https://microintel.github.io/Resources/images/karnataka_govt_logo.png" width="130px" height="130px">
+        
+       </div>
+        
+        <div><center>
+        
+        <h1>GOVERNMENT OF KARNATAKA</h1>
+        <h2>DEPARTMENT OF TECHNICAL EDUCATION, BANGALURU</h2>
+        <h3>GOVT PLOYTECHNIC, CHAMARAJANAGAR-571313</h3>
+        <p>DIPLOMA MARKS CARD<br>
+        
+        </center></div>
+        
+        <div>
+        
+        <img src="https://microintel.github.io/Resources/images/mistamp.png" width="130px" height="130px">
+        
+        
+        </div>
+        
+    </div>
+<hr>
+<center>
+
+    <table>
+    
+       <tr>
+           <th>Register No</th>
+           <td id="d2"></td>
+       </tr>
+       
+       
+        
+        
+        <tr>
+            <th>Name of Candidate</th>
+            <td id="d1"></td>
+        </tr>
+        
+        <tr>
+            <th>Name of Institution</th>
+            <td>130 - [GOVERNMENT POLYTECHNIC CHAMARAJANAGAR]</td>
+        </tr>
+       
+       
+        
+    </table>
+    
+    </center>
+
+   
+<center>
+    <Table border="1">
+    
+    <th>Sl.No</th><th>Seme</th><th>Subject Name</th> <th> See Max<th> Exam Marks</th> <th>CIE MAX</th> <th>IA Marks</th><th>Total</th>
+    <tr>
+    <td> 1. </td><td> 1</td><td> Maths  </td><td>50 </td> <td id="mex"> </td> <td> 50</td> <td id="mia"> </td> <td id="msum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 2.</td> <td>1 </td> <td> Foc </td> <td> 50</td> <td id="fex"> <td>50 </td> </td><td id="fia"> </td> <td id="focsum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 3. </td> <td>1 </td> <td>  Feee </td>  <td> 40</td> <td id="feex">  </td> <td> 60</td> <td id="feia"> </td> <td id="feesum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 4. </td> <td>1 </td> <td> It Sk </td> <td> 40</td> <td id="itex">  </td> <td>60 </td> <td id="itia"> </td> <td id="itsum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 4.1 </td> <td>1 </td> <td> EVS </td> <td>--</td><td>--</td> <td> 50</td> <td id="evsia"> </td> <td id="evssum"> </td>
+    </tr>
+    
+    
+    
+    <tr>
+    <td id="tdd" colspan="4"><p id="sem1pe"></p></td>
+    </tr>
+    
+    <tr id="tdd">
+    <td id="tdd" colspan="4"></td>
+    </tr>
+    
+    
+    
+    <tr>
+    <td> 5. </td> <td> 2</td> <td> Pms </td>   <td> 50</td>  <td id="pex">  </td> <td> 50</td> <td id="pia"> </td> <td id="pmssum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 6. </td> <td>2 </td> <td> S & A </td> <td> 40</td> <td id="sex">  </td> <td>60 </td> <td id="sia"> </td> <td id="sasum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 7. </td> <td>2 </td> <td> Communication </td>  <td> 40</td> <td id="cex">  </td> <td>60 </td> <td id="cia"> </td> <td id="csum"> </td>
+    </tr>
+    
+    <tr>
+    <td>  8.</td> <td>2 </td><td> CAEG </td>  <td> 40</td> <td id="caex">  </td> <td> 60</td> <td id="caia"> </td> <td id="caegsum"> </td>
+    </tr>
+    
+    <tr>
+    <td>9.  </td> <td> 2</td> <td>  multi media</td>  <td>40 </td>  <td id="mmex">  </td> <td> 60</td> <td id="mmia"> </td> <td id="mmsum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 9.1 </td> <td>2 </td> <td> Kannada-1 </td> <td> --</td><td>  --</td> <td>50</td> <td id="kan2ia"> </td> <td id="kan1sum"> </td>
+    </tr>
+    
+    
+    
+    
+    <tr>
+    <td id="tdd" colspan="4"> <p id="sem2pe"></p> </td>
+    </tr>
+    
+    <tr>
+    <td id="tdd" colspan="4"></td>
+    </tr>
+    
+    
+    
+    
+    <tr>
+    <td> 10. </td> <td> 3</td> <td> python </td> <td> 40</td> <td id="pyex">  </td> <td> 60</td> <td id="pyia"> </td> <td id="pysum"> </td>
+    </tr>
+    
+    <tr>
+    <td>  11.</td> <td> 3 </td> <td> CHMA </td> <td>40 </td> <td id="chex">  </td> <td> 60</td> <td id="chia"> </td> <td id="chmasum"> </td>
+    </tr>
+    
+    <tr>
+    <td>  12.</td> <td> 3</td> <td> C Network </td> <td>40 </td> <td id="cnex">  </td><td> 60</td> <td id="cnia"> </td> <td id="cnsum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 13. </td> <td>3 </td> <td>  DBMS </td> <td> 40</td> <td id="dex">  </td> <td>60 </td><td id="dia"> </td> <td id="dsum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 13.1 </td> <td>3 </td> <td> Kannada-2</td> <td> --</td> <td> -- </td> <td> 50</td> <td id="kan3ia"> </td> <td id="kan2sum"> </td>
+    </tr>
+    
+    
+    
+    
+    <tr>
+    <td id="tdd" colspan="4"> <p id="sem3pe"></p> </td>
+    </tr>
+    
+    <tr>
+    <td id="tdd" colspan="4"></td>
+    </tr>
+    
+    
+    
+    <tr>
+    <td> 14. </td> <td>4 </td> <td>  DS Python</td> <td>40 </td> <td id="dsex">  </td> <td> 60</td> <td id="dsia"> </td> <td id="dssum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 15. </td> <td> 4</td> <td> OS & A </td> <td> 40</td> <td id="oex">  </td> <td>60 </td> <td id="oia"> </td> <td id="osum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 16. </td> <td>4 </td> <td> Java </td> <td>40 </td> <td id="jex">  </td> <td> 60</td> <td id="jia"> </td> <td id="jsum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 17. </td> <td> 4</td> <td> Sepp </td> <td> 40</td> <td id="seex">  </td> <td>60 </td> <td id="seia"> </td> <td id="sesum"> </td>
+    </tr>
+    
+    <tr>
+    <td> 17.1</td> <td>4 </td> <td> IC </td> <td>-- </td> <td> -- </td> <td>50 </td> <td id="icia"> </td> <td id="icsum"> </td>
+    </tr>
+    
+    
+    
+    
+    <tr>
+    <td id="tdd" colspan="4"> <p id="sem4pe"></p> </td>
+    </tr>
+    
+    <tr>
+    <td id="tdd" colspan="4"></td>
+    </tr>
+    
+    
+    <tr>
+    <td> 18. </td> <td>5 </td> <td> Cyber</td> <td> 60/100</td> <td id="cyex">  </td> <td> 240</td> <td id="cyia"> </td> <td id="cysum"> </td>
+    </tr>
+    
+    
+    
+    
+    <tr>
+    <td id="tdd" colspan="4"> <p id="sem5pe"></p> </td>
+    </tr>
+    
+    <tr>
+    <td id="tdd" colspan="4"></td>
+    </tr>
+    
+    
+    <tr>
+    <td> 19. </td> <td>6 </td> <td>Intership[ IFOTISE ]</td> <td> 160</td> <td id="inex">  </td> <td>240 </td> <td id="inia"> </td>  <td id="insum"> </td>
+    </tr>
+    
+    
+    
+    <tr>
+    <td id="tdd" colspan="4"> <p id="sem6pe"></p> </td>
+    </tr>
+    
+    <tr>
+    <td id="tdd" colspan="4"></td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    </Table>
+    </center>
+<hr>
+
+<center><h3 id="tp"></h3>
+<h3 id="tpp"></h3>
+</center>
+   
+
+   
+</div>
+<script src="maximux.js"></script>
+<script type="text/javascript">
+
+
+function dcm(){
+//alert(sem4da["s062"][13]);
+// alert(sem6da["s062"][2]);
+ let siz=window.innerWidth;
+  if(siz>100){
+ 
+ 
+// alert(siz);
+ let g=prompt("Enter U R Diploma Reg No:- ");
+ 
+//let g="s062";
+ if(g=="130CS21X01")
+ {
+ alert("Random kids flexing like code masters after copy pasting code using AI..");
+ // window.reload();
+ }
+ if ((g>="130CS21003" && g<="130CS21063")){
+ let t = g;
+ let k=t.substr(-3);
+ let h='s'+k;
+ alert("Marks Card Genarated Sucessfully..");
+ alert("And DCET Marks Also added after Data Crawling..");
+
+
+    let me= sem1da[h][3];
+    let fe= sem1da[h][4];
+    let fee= sem1da[h][5];
+    let ie= sem1da[h][6];
+    
+    let mi= sem1da[h][9];
+    let fi=sem1da[h][10];
+    let fei=sem1da[h][11];
+    let ii=sem1da[h][12];
+    
+    let eia=sem1da[h][13];
+    
+    
+    let k1ia=semkda[h][2];
+    let k2ia=semkda[h][3];
+    let ici=sem4da[h][13];
+    
+    //------------------------------------
+    
+    
+    
+    let pe= sem2da[h][3];
+    let pi= sem2da[h][9];
+    let se= sem2da[h][4];
+    let si= sem2da[h][10];
+    let cse=sem2da[h][5];
+    
+    let cia= sem2da[h][11];
+    let cae=sem2da[h][6];
+    let cai=sem2da[h][12];
+    let mme=sem2da[h][7];
+    let mmi=sem2da[h][13];
+    
+    //------------------------------------
+    
+    
+    
+    let pye= sem3da[h][3];
+    let pyi= sem3da[h][8];
+    let che= sem3da[h][4];
+    let chi= sem3da[h][9];
+    
+    let cne= sem3da[h][5];
+    let cni=sem3da[h][10];
+    let de=sem3da[h][6];
+    let di=sem3da[h][11];
+    
+    //------------------------------------
+    
+    
+    let dse= sem4da[h][3];
+    let dsi= sem4da[h][9];
+    let oe= sem4da[h][4];
+    let oi= sem4da[h][10];
+    
+    let je= sem4da[h][5];
+    let ji=sem4da[h][11];
+    let sepe=sem4da[h][6];
+    let sepi=sem4da[h][12];
+    
+    //-----------
+    
+    
+    let cyeT=sem5da[h][3];
+    let cyeL=sem5da[h][4];
+    let cyi=sem5da[h][5];
+    
+    let ine=sem6da[h][2];
+    let ini=sem6da[h][3];
+    
+    //------------------------------------
+    
+    let s1cp=me+mi+fe+fi+fee+fei+ie+ii+eia;
+    
+    let s2cp=pe+pi+se+si+cse+cia+cae+cai+mme+mmi+k1ia;
+    
+    let s3cp=pye+pyi+che+chi+cne+cni+de+di+k2ia;
+    
+     let s4cp=dse+dsi+oe+oi+je+ji+sepe+sepi+ici;
+     
+     let s5cp=cyeT+cyeL+cyi;
+     
+     let s6cp=ine+ini;
+    
+    //---------------------------------------
+    
+   document.getElementById("d2").innerHTML=sem1da[h][0];
+   document.getElementById("d1").innerHTML=sem1da[h][1];
+    
+    
+    document.getElementById("mex").innerHTML= me;
+    document.getElementById("mia").innerHTML= mi;
+    document.getElementById("fex").innerHTML= fe;
+    document.getElementById("fia").innerHTML= fi;
+    
+    document.getElementById("feex").innerHTML= fee;
+    document.getElementById("feia").innerHTML= fei;
+    document.getElementById("itex").innerHTML= ie;
+    document.getElementById("itia").innerHTML= ii;
+    
+    document.getElementById("pex").innerHTML= pe;
+    document.getElementById("pia").innerHTML= pi;
+    document.getElementById("sex").innerHTML=se;
+    document.getElementById("sia").innerHTML= si;
+    
+    document.getElementById("cex").innerHTML= cse;
+    document.getElementById("cia").innerHTML= cia;
+    document.getElementById("caex").innerHTML= cae;
+    document.getElementById("caia").innerHTML= cai;
+    
+    document.getElementById("mmex").innerHTML= mme;
+    document.getElementById("mmia").innerHTML= mmi;
+    document.getElementById("pyex").innerHTML= pye;
+    document.getElementById("pyia").innerHTML= pyi;
+    
+    document.getElementById("chex").innerHTML= che;
+    document.getElementById("chia").innerHTML= chi;
+    document.getElementById("cnex").innerHTML= cne;
+    document.getElementById("cnia").innerHTML= cni;
+    
+    document.getElementById("dex").innerHTML=de;
+    document.getElementById("dia").innerHTML= di;
+    document.getElementById("dsex").innerHTML= dse;
+    document.getElementById("dsia").innerHTML= dsi;
+    
+    document.getElementById("oex").innerHTML= oe;
+    document.getElementById("oia").innerHTML= oi;
+    
+    document.getElementById("jex").innerHTML=je ;
+    document.getElementById("jia").innerHTML=ji;
+    document.getElementById("seex").innerHTML= sepe;
+    document.getElementById("seia").innerHTML= sepi;
+    
+    document.getElementById("cyex").innerHTML= "TM: "+cyeT+"/"+"LM: "+cyeL;
+    document.getElementById("cyia").innerHTML= cyi;
+    
+    document.getElementById("inex").innerHTML= ine;
+    document.getElementById("inia").innerHTML= ini;
+    
+    
+    document.getElementById("evsia").innerHTML= eia;
+    document.getElementById("kan2ia").innerHTML= k1ia;
+    document.getElementById("kan3ia").innerHTML= k2ia;
+    document.getElementById("icia").innerHTML= ici;
+    
+    document.getElementById("sem1pe").innerHTML= "<ex>Semester 1 Percentage is :- </ex>"+"<ef>"+((me+mi+fe+fi+fee+fei+ie+ii+eia)/450*100).toFixed(2)+"% </ef>"+"\n"+" <ef> sem 1 total:- </ef>"+"<ex>"+(me+mi+fe+fi+fee+fei+ie+ii+eia)+"/450</ex>";
+    document.getElementById("sem2pe").innerHTML= "<ex>Semester 2 Percentage is :- </ex>"+((pe+pi+se+si+cse+cia+cae+cai+mme+mmi+k1ia)/550*100).toFixed(2)+" %"+"\n sem 2 tot:- "+"<ex>"+(pe+pi+se+si+cse+cia+cae+cai+mme+mmi+k1ia)+"/550</ex>"+"<br><br><ex>"+" Only 1st Year Persentage :- </ex>"+((s1cp+s2cp)/1000*100).toFixed(2)+"<br><xe>"+" Only 1st year Total :-</xe> "+"<ex>"+(s1cp+s2cp)+"/1000</ex>";
+    document.getElementById("sem3pe").innerHTML= "<ex>Semester 3 Percentage is :- </ex>"+((pye+pyi+che+chi+cne+cni+de+di+k2ia)/450*100).toFixed(2)+" % "+"\n sem 3 total :- "+"<ex>"+(pye+pyi+che+chi+cne+cni+de+di+k2ia)+"/450</ex>";
+    document.getElementById("sem4pe").innerHTML= "<ex>Semester 4 Percentage is :- </ex>"+((dse+dsi+oe+oi+je+ji+sepe+sepi+ici)/450*100).toFixed(2)+" % "+"\n  sem 4 total :- "+"<ex>"+(dse+dsi+oe+oi+je+ji+sepe+sepi+ici)+"/450</ex>"+"<br><br><ex>"+" Only 2nd Year Persentage :- </ex>"+((s3cp+s4cp)/900*100).toFixed(2)+"<br>"+" Only 2nd year Total :- "+"<ex>"+(s3cp+s4cp)+"/900</ex>";
+    document.getElementById("sem5pe").innerHTML= "<ex>Semester 5 Percentage is :- </ex>"+((cyeT+cyeL+cyi)/400*100).toFixed(2)+" % "+"\n sem 5 total :- "+"<ex>"+(cyeT+cyeL+cyi)+"/400</ex>";
+    document.getElementById("sem6pe").innerHTML= "<ex>Semester 6 Percentage is :- </ex>"+((ine+ini)/400*100).toFixed(2)+" % "+"\n sem 6 total :- "+(ine+ini)+"/400"+"<br><br><ex>"+" Only 3rd Year Persentage :- </ex>"+((s5cp+s6cp)/800*100).toFixed(2)+"<br>"+"Only 3rd year Total :- "+(s5cp+s6cp)+"/800";
+    
+    
+    document.getElementById("msum").innerHTML=me+mi+"/100";
+    document.getElementById("focsum").innerHTML=fe+fi+"/100";
+    document.getElementById("feesum").innerHTML=fee+fei+"/100";
+    document.getElementById("itsum").innerHTML=ie+ii+"/100";
+    document.getElementById("evssum").innerHTML= eia+"/50";
+    document.getElementById("pmssum").innerHTML= pe+pi+"/100";
+    document.getElementById("sasum").innerHTML=se+si+"/100";
+    document.getElementById("csum").innerHTML= cse+cia+"/100";
+    document.getElementById("caegsum").innerHTML= cae+cai+"/100";
+    document.getElementById("mmsum").innerHTML=mme+mmi+"/100";
+    document.getElementById("kan1sum").innerHTML= k1ia+"/50";
+    document.getElementById("pysum").innerHTML= pye+pyi+"/100";
+    document.getElementById("chmasum").innerHTML=che+chi+"/100";
+    document.getElementById("cnsum").innerHTML=cne+cni+"/100";
+    document.getElementById("dsum").innerHTML= de+di+"/100";
+    document.getElementById("kan2sum").innerHTML=k2ia+"/50";
+    document.getElementById("dssum").innerHTML= dse+dsi+"/100";
+    document.getElementById("osum").innerHTML= oe+oi+"/100";
+    document.getElementById("jsum").innerHTML= je+ji+"/100";
+    document.getElementById("sesum").innerHTML= sepe+sepi+"/100";
+    document.getElementById("icsum").innerHTML=ici+"/50";
+    document.getElementById("cysum").innerHTML=cyeT+cyeL+cyi+"/400";
+    document.getElementById("insum").innerHTML=ine+ini+"/400";
+    
+    
+   // document.getElementById("webtit").innerHTML= ;
+    
+    
+    var result = (
+    ((me + mi + fe + fi + fee + fei + ie + ii+eia) / 450 * 100) +
+    ((pe + pi + se + si + cse + cia + cae + cai + mme + mmi+k1ia) / 550 * 100) +
+    ((pye + pyi + che + chi + cne + cni + de + di+k2ia) / 450 * 100) +
+    ((dse + dsi + oe + oi + je + ji + sepe + sepi+ici) / 450 * 100) +
+    ((cyeT + cyeL + cyi) / 400 * 100) +
+    ((ine + ini) / 400 * 100)
+    );
+    
+    
+    
+    let resul=result/600*100;
+    resul=resul.toFixed(2);
+    
+    let calcul=((s1cp+s2cp+s3cp+s4cp+s5cp+s6cp)-52)/2700*100;
+    calcul=calcul.toFixed(2);
+    
+   document.getElementById("tp").innerHTML= "total Percentage is :- "+(calcul)+"%";
+   
+   document.getElementById("tpp").innerHTML="Total Diploma Marks :- "+(s1cp+s2cp+s3cp+s4cp+s5cp+s6cp)+"/2700";
+   // alert((50+25)/100*100+(50+25)/100*100);
+ 
+ 
+  
+    
+    
+    //alert(1);
+    let xccc=confirm("Did U Wish Get Pdf Format...");
+    if(xccc==true){
+     window.print();
+     }
+     else{
+     
+     //122
+     }
+    
+     //location.reload();
+    
+    //--------------------------------------------------------
+    
+    
+    
+}
+else{
+// confirm("Invalid");
+}
+
+}
+else{
+alert("This Diploma Cycle Marks Is perfetly designed for only Desktop View, So Kindly Enable Desktop View, Otherwise U Will See Differnt Layout.…..");
+alert("Marks Card Struture Has Been Genarated..");
+}
+}
+dcm();
+
+</script>
+
+</body>
+</html>
