@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -329,7 +327,7 @@ function dcm(){
 //alert(sem4da["s062"][13]);
 // alert(sem6da["s062"][2]);
  let siz=window.innerWidth;
-  if(siz>700){
+  if(siz>100){
  
  
 // alert(siz);
@@ -345,6 +343,7 @@ function dcm(){
  let t = g;
  let k=t.substr(-3);
  let h='s'+k;
+ let dh=h;
  alert("Marks Card Genarated Sucessfully..");
  alert("And DCET Marks Also added after Data Crawling..");
 
@@ -547,7 +546,13 @@ function dcm(){
     let calcul=((s1cp+s2cp+s3cp+s4cp+s5cp+s6cp)-52)/2700*100;
     calcul=calcul.toFixed(2);
     
+    if(dh in dcetDATA){
+    alert(111);
+   document.getElementById("tp").innerHTML= "Total Diploma Percentage is :- "+(dcetDATA[dh][5])+"%";
+   }
+   else{
    document.getElementById("tp").innerHTML= "Total Diploma Percentage is :- "+(calcul)+"%";
+   }
    
    document.getElementById("tpp").innerHTML="Total Diploma Marks :- "+(s1cp+s2cp+s3cp+s4cp+s5cp+s6cp)+"/2700";
    // alert((50+25)/100*100+(50+25)/100*100);
@@ -588,4 +593,4 @@ dcm();
 </script>
 
 </body>
-</html>
+                                                                                                            </html>
