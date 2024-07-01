@@ -77,6 +77,8 @@
 </head>
 <body>
 <script src="https://microassest.github.io/MicroIntelAssest/dmcscript.js"></script>
+    <script src="dcetDATAinLIST.js"></script>
+    
 <div id="content">
     <div class="header">
         <div>
@@ -327,7 +329,7 @@ function dcm(){
 //alert(sem4da["s062"][13]);
 // alert(sem6da["s062"][2]);
  let siz=window.innerWidth;
-  if(siz>100){
+  if(siz>700){
  
  
 // alert(siz);
@@ -547,7 +549,7 @@ function dcm(){
     calcul=calcul.toFixed(2);
     
     if(dh in dcetDATA){
-    alert(111);
+   // alert(111);
    document.getElementById("tp").innerHTML= "Total Diploma Percentage is :- "+(dcetDATA[dh][5])+"%";
    }
    else{
