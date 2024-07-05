@@ -263,16 +263,7 @@ function dcm(){
   
     
     
-    //alert(1);
-    let xccc=confirm("Did U Wish Get Pdf Format...");
-    if(xccc==true){
-     window.print();
-     }
-     else{
-     
-     //122
-     }
-    
+    //alert(1);    
      //location.reload();
     
     //--------------------------------------------------------
