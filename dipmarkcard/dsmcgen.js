@@ -174,9 +174,9 @@ function dcm(){
     document.getElementById("icia").innerHTML= ici;
     
     document.getElementById("sem1peP").innerHTML= ((me+mi+fe+fi+fee+fei+ie+ii+eia)/450*100).toFixed(2)+"%";
-    document.getElementById("sem1peG").innerHTML= (me+fe+fee+ie)+"/180<br><br>"+(mi+fi+fei+ii+eia)+"/270<br><br>"+(me+mi+fe+fi+fee+fei+ie+ii+eia)+"/450";
+    document.getElementById("sem1peG").innerHTML= (me+fe+fee+ie)+"/180e<br><br>"+(mi+fi+fei+ii+eia)+"/270i<br><br>"+(me+mi+fe+fi+fee+fei+ie+ii+eia)+"/450";
     document.getElementById("sem2peP").innerHTML= ((pe+pi+se+si+cse+cia+cae+cai+mme+mmi+k1ia)/550*100).toFixed(2)+" %";
-    document.getElementById("sem2peG").innerHTML= (pe+se+cse+cae+mme)+"/210<br><br>"+(pi+si+cia+cai+mmi+k1ia)+"/340<br><br>"+(pe+pi+se+si+cse+cia+cae+cai+mme+mmi+k1ia)+"/550";
+    document.getElementById("sem2peG").innerHTML= (pe+se+cse+cae+mme)+"/210e<br><br>"+(pi+si+cia+cai+mmi+k1ia)+"/340i<br><br>"+(pe+pi+se+si+cse+cia+cae+cai+mme+mmi+k1ia)+"/550";
     
     
     
@@ -184,9 +184,9 @@ function dcm(){
     
     
     document.getElementById("sem3peP").innerHTML= ((pye+pyi+che+chi+cne+cni+de+di+k2ia)/450*100).toFixed(2)+" %";
-    document.getElementById("sem3peG").innerHTML= (pye+che+cne+de)+"/160<br><br>"+(pyi+chi+cni+di+k2ia)+"/290<br><br>"+(pye+pyi+che+chi+cne+cni+de+di+k2ia)+"/450";
+    document.getElementById("sem3peG").innerHTML= (pye+che+cne+de)+"/160e<br><br>"+(pyi+chi+cni+di+k2ia)+"/290i<br><br>"+(pye+pyi+che+chi+cne+cni+de+di+k2ia)+"/450";
     document.getElementById("sem4peP").innerHTML= ((dse+dsi+oe+oi+je+ji+sepe+sepi+ici)/450*100).toFixed(2)+" %";
-    document.getElementById("sem4peG").innerHTML= (dse+oe+je+sepe)+"/160<br><br>"+(dsi+oi+ji+sepi+ici)+"/290<br><br>"+(dse+dsi+oe+oi+je+ji+sepe+sepi+ici)+"/450";
+    document.getElementById("sem4peG").innerHTML= (dse+oe+je+sepe)+"/160e<br><br>"+(dsi+oi+ji+sepi+ici)+"/290i<br><br>"+(dse+dsi+oe+oi+je+ji+sepe+sepi+ici)+"/450";
     
     
    document.getElementById("y2").innerHTML=((s3cp+s4cp)/900*100).toFixed(2)+"% <br><br>"+(s3cp+s4cp)+"/900";
@@ -224,8 +224,8 @@ function dcm(){
     document.getElementById("jsum").innerHTML= je+ji;
     document.getElementById("sesum").innerHTML= sepe+sepi;
     document.getElementById("icsum").innerHTML=ici;
-    document.getElementById("cysum").innerHTML=cyeT+cyeL+cyi;
-    document.getElementById("insum").innerHTML=ine+ini;
+    document.getElementById("cysum").innerHTML=(cyeT+cyeL+cyi)+"/400";
+    document.getElementById("insum").innerHTML=(ine+ini)+"/400";
     
     
    // document.getElementById("webtit").innerHTML= ;
