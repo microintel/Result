@@ -129,6 +129,7 @@ body{
 <script type="text/javascript">
 
 let urlAd = new URL(window.location.href );
+  document.getElementById('se').value=1;
 if(urlAd.searchParams.get("regno")!=="" && urlAd.searchParams.get("sem")!==""){
 document.getElementById('se').value=urlAd.searchParams.get("sem");
 document.getElementById("i").value= urlAd.searchParams.get("regno");
