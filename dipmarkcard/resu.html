@@ -9,7 +9,13 @@
 -->
 <html>
 <head>
-          
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+  <style type="text/css">
+  
+  #celAu{
+  display:none;
+  }
+  </style> 
 <title>MI Result</title>
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/microintel/endgram/main/photo/microresult-favicon.png">
       
@@ -80,7 +86,8 @@ body{
 <link rel="stylesheet" href="result.css">
 </head>
 <body>
-       <script src="https://microintel.github.io/Result/dipmarkcard/dcetDATAinLIST.js"></script>
+<script src="https://microintel.github.io/Result/dipmarkcard/dcetDATAinLIST.js"></script>
+<audio id="celAu" src="celab.mp3"></audio>
 <script src="maximux.js"></script>
 <img src="https://4.bp.blogspot.com/-sJv3pQOUHks/TiWruyLxAnI/AAAAAAAAAGs/wQ5hw_mPY7w/s1600/karnataka_govt_logo.png"  height="100PX" width="100PX">
 <h1><strong>BOARD OF TECHNICAL EDUCATION</strong></h1>
@@ -103,8 +110,11 @@ body{
     </select>
     <datalist id="inpp">
     <option>130CS21005</option>
+    <option>130CS21012</option>
     <option>130CS21015</option>
+    <option>130CS21037</option>
     <option>130CS21063</option>
+    
     </datalist>
     <P> </P>
     <button onclick="sem()" style="background-color: rgba(250, 162, 0, 0.966); border: hidden; border-radius: 15px;">Get Result</button>
@@ -117,24 +127,6 @@ body{
 <p id="dev"></p>
 </body>
 
-<script>
-function semsex(){
-let g=document.getElementById('i').value;
-    if((g=="130CS20034" || g=="130CS20048")){
-  alert("processing");
-    }
-  if ((g>="130CS21003" && g<="130CS21063")){
-  let t = document.getElementById('i').value;
-  let k=t.substr(-3);
-  let h='s'+k;
-  if (h in dcetDATA) {
-  alert("Dear "+dcetDATA[h][1]+",\n Your DIPLOMA Marks Card Is Ready To View.");
-  document.getElementById('dcr').style.display="block";document.getElementById('ddf').style.display="block";document.getElementById('dmk').style.display="block";
-  }
-else{
-document.getElementById('dcr').style.display="none";document.getElementById('ddf').style.display="block";document.getElementById('dmk').style.display="none";
-}}}
-</script>
+<script src="confetti.js"></script>
 
 </html>
-
