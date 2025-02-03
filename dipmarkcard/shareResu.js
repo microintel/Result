@@ -9,8 +9,8 @@ let imgs = [
 
 async function sh() {
 let urlSh = new URL(window.location.href);
-urlSh.searchParams.set("regno",document.getElementById("i").value;);
-urlSh.searchParams.set("regno",document.getElementById("se").value;);
+urlSh.searchParams.set("regno",document.getElementById("i").value);
+urlSh.searchParams.set("sem",document.getElementById("se").value);
     let imgUrl = imgs[Math.floor(Math.random() * imgs.length)];
     try {
       let res = await fetch(imgUrl);
