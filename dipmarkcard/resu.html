@@ -133,8 +133,8 @@ document.getElementById("resuB").addEventListener("pointerdown", function () {
     let se = document.getElementById("se").value;
     refResu.searchParams.set("regno", regno);
     refResu.searchParams.set("sem", se);
-
-   window.location.href= refResu.toString();
+window.history.pushState({}, "", refResu.toString());
+  // window.location.href= refResu.toString();
 });
 let urlAd = new URL(window.location.href );
   document.getElementById('se').value=1;
