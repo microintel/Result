@@ -125,8 +125,19 @@ body{
 <p id="ghj"></p>
 <p id="prix"></p>
 <p id="dev"></p>
-</body>
 
+<script type="text/javascript">
+
+let urlAd = new URL(window.location.href );
+if(urlAd.searchParams.get("regno")!=="" && urlAd.searchParams.get("sem")!==""){
+document.getElementById('se').value=urlAd.searchParams.get("sem");
+document.getElementById("i").value= urlAd.searchParams.get("regno");
+window.onload = function () { sem();};
+}
+
+</script>
+
+</body>
 <script src="confetti.js"></script>
 
 </html>
