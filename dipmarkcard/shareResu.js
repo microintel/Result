@@ -1,4 +1,4 @@
-document.body.addEventListener("dblclick", () => {
+document.getElementById("karL").addEventListener("dblclick", () => {
     sh();
 });
 
