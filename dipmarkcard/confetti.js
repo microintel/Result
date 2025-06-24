@@ -20,7 +20,7 @@ document.getElementById('dcr').style.display="none";document.getElementById('ddf
 function lau(){
         let celInp=document.getElementById("i").value;
         let celA=document.getElementById("celAu");
-        if(celInp=="130CS21063" || celInp=="130CS21037" || celInp=="130CS21015" || celInp=="130CS21012" || celInp=="130CS21005" || celInp=="130CS21062"){
+        if(celInp=="130CS21063" || celInp=="130CS21037" || celInp=="130CS21015" || celInp=="130CS21012" || celInp=="130CS21005" || celInp=="130CS21062" || celInp=="130CS21023"){
         celA.currentTime=0;
         celA.play();
         confetti({
