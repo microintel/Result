@@ -7,18 +7,21 @@
 <body>
 </script><script src="script.js"></script><script src="dcetDATAinLIST.js"></script>
 <div id="cont">
+  
     <div class="head">
+      
         <div>
-        <img src="https://raw.githubusercontent.com/microintel/endgram/main/photo/karnataka_govt_logo_70_11zon.png" width="130px" height="130px">
+        <img src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microintel%20stamp.png" width="130px" height="130px">
        </div>
         <div><center>
+           <img src="https://raw.githubusercontent.com/microintel/endgram/main/photo/Seal_of_Karnataka.png" width="90px" height="80px">
         <h2>GOVERNMENT OF KARNATAKA</h2>
         <h3>DEPARTMENT OF TECHNICAL EDUCATION, BANGALURU</h3>
         <h3 style="margin:7px;">GOVT PLOYTECHNIC, CHAMARAJANAGAR-571313</h3>
         <p>DIPLOMA MARKS CARD<br>
         </center></div>
-        <div>
-        <img src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microintel%20stamp.png" width="130px" height="130px">
+        <div onclick="upImg('userimgg')">
+        <img src="" id="userimgg" width="130px" style="border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.2);" alt="upload your photo" height="130px">
         </div>
     </div>
 <hr>
@@ -95,24 +98,21 @@
    <h3 style="text-align:center;"> DCET RESULT </h3>
    <table>
      <tr>
-        <th> Dcet Rank </th> <th> Dcet Score</th> <th> Dip Conversion</th>
+        <th> Dcet Rank </th> <th> Dcet Score</th> <th> Dip Conversion</th> <th> Dip tot marks</th>
      </tr>
      <tr>
-       <td id="dcetRank"> </td> <td id="dcetScore"> </td> <td id="dcetDipCon"></td>
+       <td id="dcetRank"> </td> <td id="dcetScore"> </td> <td id="dcetDipCon"></td> <td id="tpp"></td>
      </tr>
    
    </table>
     
 </div>
 
-<hr>
+
 <div class="he">
-<h3 style="margin:0px;margin-top:5px;" id="tp"></h3>
-<h3 style="margin:0px;margin-top:5px;" id="tpp"></h3>
   </div> 
 </p>
-<hr>
-<h5 id="printon" style="text-align:right;"></h5>
+<h5 id="printon" style="text-align:right;display: none;"></h5>
    <button style="padding:10px;border-radius:15px;background-color:white;color:black;" id="bt" onclick="pri()">Print</button>     
 </div>
 

@@ -252,18 +252,16 @@ function dcm(){
        document.getElementById("dcetRank").innerHTML=(dcetDATA[dh][3]);
        document.getElementById("dcetScore").innerHTML=(dcetDATA[dh][4]);
        document.getElementById("dcetDipCon").innerHTML=(dcetDATA[dh][5]);
-   document.getElementById("tp").innerHTML= "Total Diploma Percentage is :- <red>"+(dcetDATA[dh][5])+"%</red>";
    document.getElementById("printon").innerText= "Printed On "+getDMY();
    }
    else{
-   document.getElementById("tp").innerHTML= "Total Diploma Percentage is :-  <red> "+(calcul)+"%</red>";
    document.getElementById("dcetRank").innerHTML="Data Not Fed";
    document.getElementById("dcetScore").innerHTML="Data Not Fed";
-   document.getElementById("dcetDipCon").innerHTML="Data Not Fed";
+   document.getElementById("dcetDipCon").innerHTML= (calcul);
    document.getElementById("printon").innerText= "Printed On "+getDMY();
    }
    
-   document.getElementById("tpp").innerHTML="Total Diploma Marks :-  <red>"+(s1cp+s2cp+s3cp+s4cp+s5cp+s6cp)+"/2700</red>";
+   document.getElementById("tpp").innerHTML=(s1cp+s2cp+s3cp+s4cp+s5cp+s6cp)+"/2700</red>";
    document.getElementById("printon").innerText= "Printed On "+getDMY();
    // alert((50+25)/100*100+(50+25)/100*100);
  
@@ -306,4 +304,29 @@ function getDMY() {
   }
 
   return day + '-' + month + '-' + year;
+}
+
+
+
+
+
+function upImg(id) {
+  const img = document.getElementById(id);
+  img.addEventListener('click', () => {
+    const inp = document.createElement('input');
+    inp.type = 'file';
+    inp.accept = 'image/*';
+    inp.style.display = 'none';
+    inp.addEventListener('change', e => {
+      const f = e.target.files[0];
+      if (f && f.type.startsWith('image/')) {
+        const r = new FileReader();
+        r.onload = ev => { img.src = ev.target.result; };
+        r.readAsDataURL(f);
+      }
+    });
+    document.body.appendChild(inp);
+    inp.click();
+    document.body.removeChild(inp);
+  });
 }

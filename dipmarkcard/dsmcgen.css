@@ -7,17 +7,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
     font-weight: bold;
     padding: 10px;
     }
     .head img {
-    width: 60px;
+    width: 98px;
     }
     .head h1, .head h2, .head h3 {
     margin: 3px;
-    font-size:0.7rem;
+    font-size:0.8rem;
     }
     table {
     width: 90%;
