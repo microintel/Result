@@ -249,14 +249,22 @@ function dcm(){
     calcul=calcul.toFixed(2);
     
     if(dh in dcetDATA){
-   // alert(111);
+       document.getElementById("dcetRank").innerHTML=(dcetDATA[dh][3]);
+       document.getElementById("dcetScore").innerHTML=(dcetDATA[dh][4]);
+       document.getElementById("dcetDipCon").innerHTML=(dcetDATA[dh][5]);
    document.getElementById("tp").innerHTML= "Total Diploma Percentage is :- <red>"+(dcetDATA[dh][5])+"%</red>";
+   document.getElementById("printon").innerText= "Printed On "+getDMY();
    }
    else{
    document.getElementById("tp").innerHTML= "Total Diploma Percentage is :-  <red> "+(calcul)+"%</red>";
+   document.getElementById("dcetRank").innerHTML="Data Not Fed";
+   document.getElementById("dcetScore").innerHTML="Data Not Fed";
+   document.getElementById("dcetDipCon").innerHTML="Data Not Fed";
+   document.getElementById("printon").innerText= "Printed On "+getDMY();
    }
    
    document.getElementById("tpp").innerHTML="Total Diploma Marks :-  <red>"+(s1cp+s2cp+s3cp+s4cp+s5cp+s6cp)+"/2700</red>";
+   document.getElementById("printon").innerText= "Printed On "+getDMY();
    // alert((50+25)/100*100+(50+25)/100*100);
  
  
@@ -282,3 +290,20 @@ alert("Marks Card Struture Has Been Genarated..");
 }
 }
 dcm();
+
+
+function getDMY() {
+  let today = new Date();
+  let day = today.getDate();
+  let month = today.getMonth() + 1;
+  let year = today.getFullYear();
+
+  if (day < 10) {
+    day = '0' + day;
+  }
+  if (month < 10) {
+    month = '0' + month;
+  }
+
+  return day + '-' + month + '-' + year;
+}
