@@ -13,10 +13,11 @@ body {
     padding: 10px;
     }
     .head img {
-    width: 100px;
+    width: 60px;
     }
     .head h1, .head h2, .head h3 {
     margin: 3px;
+    font-size:0.7rem;
     }
     table {
     width: 90%;
