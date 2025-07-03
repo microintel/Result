@@ -215,29 +215,29 @@ function dcm(){
     
     
     
-    document.getElementById("msum").innerHTML=me+mi+"("+grapi(me+mi)+")";
-    document.getElementById("focsum").innerHTML=fe+fi+"("+grapi(fe+fi)+")";
-    document.getElementById("feesum").innerHTML=fee+fei+"("+grapi(fee+fei)+")";
-    document.getElementById("itsum").innerHTML=ie+ii+"("+grapi(ie+ii)+")";
-    document.getElementById("evssum").innerHTML= eia+"("+grapi(eia+50)+")";
-    document.getElementById("pmssum").innerHTML= pe+pi+"("+grapi(pe+pi)+")";
-    document.getElementById("sasum").innerHTML=se+si+"("+grapi(se+si)+")";
-    document.getElementById("csum").innerHTML= cse+cia+"("+grapi(cse+cia)+")";
-    document.getElementById("caegsum").innerHTML= cae+cai+"("+grapi(cae+cai)+")";
-    document.getElementById("mmsum").innerHTML=mme+mmi+"("+grapi(mme+mmi)+")";
-    document.getElementById("kan1sum").innerHTML= k1ia+"("+grapi(k1ia+50)+")";
-    document.getElementById("pysum").innerHTML= pye+pyi+"("+grapi(pye+pyi)+")";
-    document.getElementById("chmasum").innerHTML=che+chi+"("+grapi(che+chi)+")";
-    document.getElementById("cnsum").innerHTML=cne+cni+"("+grapi(cne+cni)+")";
-    document.getElementById("dsum").innerHTML= de+di+"("+grapi(de+di)+")";
-    document.getElementById("kan2sum").innerHTML=k2ia+"("+grapi(k2ia+50)+")";
-    document.getElementById("dssum").innerHTML= dse+dsi+"("+grapi(dse+dsi)+")";
-    document.getElementById("osum").innerHTML= oe+oi+"("+grapi(oe+oi)+")";
-    document.getElementById("jsum").innerHTML= je+ji+"("+grapi(je+ji)+")";
-    document.getElementById("sesum").innerHTML= sepe+sepi+"("+grapi(sepe+sepi)+")";
-    document.getElementById("icsum").innerHTML=ici+"("+grapi(ici+50)+")";
-    document.getElementById("cysum").innerHTML=(cyeT+cyeL+cyi)+"/400"+"("+grapi(cyeT+cyeL+cyi)+")";
-    document.getElementById("insum").innerHTML=(ine+ini)+"/400"+"("+grapi(ine+ini)+")";
+    document.getElementById("msum").innerHTML=me+mi+"&nbsp;("+grapi(me+mi)+")";
+    document.getElementById("focsum").innerHTML=fe+fi+"&nbsp;("+grapi(fe+fi)+")";
+    document.getElementById("feesum").innerHTML=fee+fei+"&nbsp;("+grapi(fee+fei)+")";
+    document.getElementById("itsum").innerHTML=ie+ii+"&nbsp;("+grapi(ie+ii)+")";
+    document.getElementById("evssum").innerHTML= eia+"&nbsp;("+grapi(eia+50)+")";
+    document.getElementById("pmssum").innerHTML= pe+pi+"&nbsp;("+grapi(pe+pi)+")";
+    document.getElementById("sasum").innerHTML=se+si+"&nbsp;("+grapi(se+si)+")";
+    document.getElementById("csum").innerHTML= cse+cia+"&nbsp;("+grapi(cse+cia)+")";
+    document.getElementById("caegsum").innerHTML= cae+cai+"&nbsp;("+grapi(cae+cai)+")";
+    document.getElementById("mmsum").innerHTML=mme+mmi+"&nbsp;("+grapi(mme+mmi)+")";
+    document.getElementById("kan1sum").innerHTML= k1ia+"&nbsp;("+grapi(k1ia+50)+")";
+    document.getElementById("pysum").innerHTML= pye+pyi+"&nbsp;("+grapi(pye+pyi)+")";
+    document.getElementById("chmasum").innerHTML=che+chi+"&nbsp;("+grapi(che+chi)+")";
+    document.getElementById("cnsum").innerHTML=cne+cni+"&nbsp;("+grapi(cne+cni)+")";
+    document.getElementById("dsum").innerHTML= de+di+"&nbsp;("+grapi(de+di)+")";
+    document.getElementById("kan2sum").innerHTML=k2ia+"&nbsp;("+grapi(k2ia+50)+")";
+    document.getElementById("dssum").innerHTML= dse+dsi+"&nbsp;("+grapi(dse+dsi)+")";
+    document.getElementById("osum").innerHTML= oe+oi+"&nbsp;("+grapi(oe+oi)+")";
+    document.getElementById("jsum").innerHTML= je+ji+"&nbsp;("+grapi(je+ji)+")";
+    document.getElementById("sesum").innerHTML= sepe+sepi+"&nbsp;("+grapi(sepe+sepi)+")";
+    document.getElementById("icsum").innerHTML=ici+"&nbsp;("+grapi(ici+50)+")";
+    document.getElementById("cysum").innerHTML=(cyeT+cyeL+cyi)+"/400"+"&nbsp;("+grapi((cyeT+cyeL+cyi)/400*100)+")";
+    document.getElementById("insum").innerHTML=(ine+ini)+"/400"+"&nbsp;("+grapi((ine+ini)/400*100)+")";
     
     
    // document.getElementById("webtit").innerHTML= ;
