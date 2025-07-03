@@ -219,23 +219,23 @@ function dcm(){
     document.getElementById("focsum").innerHTML=fe+fi+"&nbsp;("+grapi(fe+fi)+")";
     document.getElementById("feesum").innerHTML=fee+fei+"&nbsp;("+grapi(fee+fei)+")";
     document.getElementById("itsum").innerHTML=ie+ii+"&nbsp;("+grapi(ie+ii)+")";
-    document.getElementById("evssum").innerHTML= eia+"&nbsp;("+grapi(eia+50)+")";
+    document.getElementById("evssum").innerHTML= eia+"&nbsp;("+grapi(eia*2)+")";
     document.getElementById("pmssum").innerHTML= pe+pi+"&nbsp;("+grapi(pe+pi)+")";
     document.getElementById("sasum").innerHTML=se+si+"&nbsp;("+grapi(se+si)+")";
     document.getElementById("csum").innerHTML= cse+cia+"&nbsp;("+grapi(cse+cia)+")";
     document.getElementById("caegsum").innerHTML= cae+cai+"&nbsp;("+grapi(cae+cai)+")";
     document.getElementById("mmsum").innerHTML=mme+mmi+"&nbsp;("+grapi(mme+mmi)+")";
-    document.getElementById("kan1sum").innerHTML= k1ia+"&nbsp;("+grapi(k1ia+50)+")";
+    document.getElementById("kan1sum").innerHTML= k1ia+"&nbsp;("+grapi(k1ia*2)+")";
     document.getElementById("pysum").innerHTML= pye+pyi+"&nbsp;("+grapi(pye+pyi)+")";
     document.getElementById("chmasum").innerHTML=che+chi+"&nbsp;("+grapi(che+chi)+")";
     document.getElementById("cnsum").innerHTML=cne+cni+"&nbsp;("+grapi(cne+cni)+")";
     document.getElementById("dsum").innerHTML= de+di+"&nbsp;("+grapi(de+di)+")";
-    document.getElementById("kan2sum").innerHTML=k2ia+"&nbsp;("+grapi(k2ia+50)+")";
+    document.getElementById("kan2sum").innerHTML=k2ia+"&nbsp;("+grapi(k2ia*2)+")";
     document.getElementById("dssum").innerHTML= dse+dsi+"&nbsp;("+grapi(dse+dsi)+")";
     document.getElementById("osum").innerHTML= oe+oi+"&nbsp;("+grapi(oe+oi)+")";
     document.getElementById("jsum").innerHTML= je+ji+"&nbsp;("+grapi(je+ji)+")";
     document.getElementById("sesum").innerHTML= sepe+sepi+"&nbsp;("+grapi(sepe+sepi)+")";
-    document.getElementById("icsum").innerHTML=ici+"&nbsp;("+grapi(ici+50)+")";
+    document.getElementById("icsum").innerHTML=ici+"&nbsp;("+grapi(ici+ici)+")";
     document.getElementById("cysum").innerHTML=(cyeT+cyeL+cyi)+"/400"+"&nbsp;("+grapi((cyeT+cyeL+cyi)/400*100)+")";
     document.getElementById("insum").innerHTML=(ine+ini)+"/400"+"&nbsp;("+grapi((ine+ini)/400*100)+")";
     
