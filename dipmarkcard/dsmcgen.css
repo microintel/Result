@@ -18,12 +18,14 @@ body {
     }
     .head h1, .head h2, .head h3 {
     margin: 3px;
+    font-size:0.7rem;
     font-size:0.8rem;
     }
     table {
     width: 90%;
     border-collapse: collapse;
     margin-top:2px;
+    font-size:0.9rem;
     margin-left: auto;
     margin-right: auto;
     }
