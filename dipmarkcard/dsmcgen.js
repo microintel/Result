@@ -1,6 +1,8 @@
 function pri(){
   alert("avoid page split use Fit to Page in PDF viewer or Chrome.");
 document.getElementById('bt').style.display='none';
+document.getElementById('eddd').style.display='none';
+
 window.print();
 }
 
