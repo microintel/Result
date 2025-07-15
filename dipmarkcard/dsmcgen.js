@@ -284,6 +284,12 @@ function dcm(){
   
   document.getElementById("engg").innerHTML=enggDATA[dh];
   }
+  
+  if(dh in sslcDATA){
+  
+  
+  document.getElementById("sslc").innerHTML=sslcDATA[dh];
+  }
     
     
     //alert(1);    
