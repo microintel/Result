@@ -36,9 +36,10 @@ function dcm(){
  let k=t.substr(-3);
  let h='s'+k;
  let dh=h;
+ 
  alert("Marks Card Genarated Sucessfully..");
  alert("And MakeUP Marks Also added after Data Crawling..");
-
+ 
 
     let me= sem1da[h][3];
     let fe= sem1da[h][4];
@@ -278,7 +279,11 @@ function dcm(){
    // alert((50+25)/100*100+(50+25)/100*100);
  
  
+  if(dh in enggDATA){
   
+  
+  document.getElementById("engg").innerHTML=enggDATA[dh];
+  }
     
     
     //alert(1);    
