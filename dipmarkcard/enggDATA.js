@@ -2,11 +2,11 @@ let enggDATA={
     s012:`
     <h2 style="text-align:center;">Engginering </h2>
   <table border="1">
-  <tr><td><strong>Name</strong></td><td>CHANDRASHEKHAR S</td></tr>
-  <tr><td><strong>Reg Num</strong></td><td>4NI24CS406</td></tr>
+  <tr><td>Name</td><td>CHANDRASHEKHAR S</td></tr>
+  <tr><td>Reg Num</td><td>4NI24CS406</td></tr>
   
-  <tr><td><strong>Branch</strong></td><td>B.E - CSE</td></tr>
-  <tr><td><strong>Institute</strong></td><td>The National Institute of Engineering</td></tr>
+  <tr><td>Branch</td><td>B.E - CSE</td></tr>
+  <tr><td>Institute</td><td>The National Institute of Engineering</td></tr>
   </tbody></table>
   
   <h2 style="text-align:center;">Semester 3</h2>
@@ -92,13 +92,13 @@ let enggDATA={
   </tr>
   
   <tr>
-  <td colspan="2"><strong>Total Credits Registered</strong></td>
+  <td colspan="2">Total Credits Registered</td>
   <td>21</td>
-  <td><strong>Earned</strong></td>
+  <td>Earned</td>
   <td>13</td>
   </tr>
   <tr>
-  <td colspan="4"><strong>SGPA</strong></td>
+  <td colspan="4">SGPA</td>
   <td>4.57</td>
   </tr>
   </tbody></table>
@@ -185,13 +185,13 @@ let enggDATA={
   </tr>
   
   <tr>
-  <td colspan="2"><strong>Total Credits Registered</strong></td>
+  <td colspan="2">Total Credits Registered</td>
   <td>19</td>
-  <td><strong>Earned</strong></td>
+  <td>Earned</td>
   <td>19</td>
   </tr>
   <tr>
-  <td colspan="4"><strong>SGPA</strong></td>
+  <td colspan="4">SGPA</td>
   <td>7.05</td>
   </tr>
   </tbody></table>
