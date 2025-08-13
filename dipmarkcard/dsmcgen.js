@@ -42,7 +42,7 @@ function dcm(){
 let g = "";
 
 function getRNo() {
-  const url = new URL("https://microintel.github.io/Result/dipmarkcard/resu.html?regno=130CS21012&sem=6");
+  const url = new URL(window.location.href);
   const regNo = url.searchParams.get('regno');
   
   return regNo;
