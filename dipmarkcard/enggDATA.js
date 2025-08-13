@@ -3,7 +3,7 @@ let enggDATA={
     <h2 style="text-align:center;">Engginering </h2>
   <table border="1">
   <tr><td>Name</td><td>CHANDRASHEKHAR S</td></tr>
-  <tr><td>Reg Num</td><td>4NI24CS406</td></tr>
+  <tr><td>Reg Num</td><td>NKN123</td></tr>
   
   <tr><td>Branch</td><td>B.E - CSE</td></tr>
   <tr><td>Institute</td><td>The National Institute of Engineering</td></tr>
@@ -202,3 +202,4 @@ let enggDATA={
 
     
     };
+
