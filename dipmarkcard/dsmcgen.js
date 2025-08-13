@@ -1,8 +1,21 @@
+
+function shareP() {
+  if (navigator.share) {
+  let na= document.getElementById("d1").innerText;
+    navigator.share({
+      title: na+"'s result",
+      url: location.href
+    });
+  } else {
+    alert("Sharing not supported on this browser");
+  }
+}
+
 function pri(){
   alert("avoid page split use Fit to Page in PDF viewer or Chrome.");
 document.getElementById('bt').style.display='none';
 document.getElementById('eddd').style.display='none';
-
+document.getElementById('edddx').style.display='none';
 window.print();
 }
 
@@ -25,7 +38,39 @@ function dcm(){
  
  
 // alert(siz);
- let g=prompt("Enter U R Diploma Reg No:- ");
+
+let g = "";
+
+function getRNo() {
+  const url = new URL("https://microintel.github.io/Result/dipmarkcard/resu.html?regno=130CS21012&sem=6");
+  const regNo = url.searchParams.get('regno');
+  
+  return regNo;
+}
+
+function pror(regNo) {
+  g = String(regNo);
+}
+
+const regNo = getRNo();
+
+if (regNo === null) {
+  
+} else {
+let ar= confirm("Are u sure to get the result of this  num "+regNo);
+ ar === true ? pror(regNo) : g = prompt("Enter your Diploma Reg No:- ");
+  
+  
+}
+
+console.log("Final Reg No:", g);
+
+function setKVU(k, v) {
+  const u = new URL(window.location.href);
+  u.searchParams.set(k, v);
+  history.replaceState({}, '', u);
+}
+// let g=prompt("Enter U R Diploma Reg No:- ");
  
 //let g="s062";
  if(g=="130CS21X01")
@@ -35,6 +80,7 @@ function dcm(){
  }
  if ((g>="130CS21003" && g<="130CS21063")){
  let t = g;
+ setKVU("regno",g);
  let k=t.substr(-3);
  let h='s'+k;
  let dh=h;
