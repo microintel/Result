@@ -55,7 +55,7 @@ function pror(regNo) {
 const regNo = getRNo();
 
 if (regNo === null) {
-  
+  g = prompt("Enter your Diploma Reg No:- ");
 } else {
 let ar= confirm("Are u sure to get the result of this  num "+regNo);
  ar === true ? pror(regNo) : g = prompt("Enter your Diploma Reg No:- ");
